@@ -90,15 +90,13 @@ export default function Hero() {
               View Projects
             </a>
 
-            <a
-              href="./resume.pdf"
-              download="Prahlad_Kumar_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="px-6 py-3 rounded-full border border-purple-500 hover:bg-purple-600 transition duration-300 text-sm md:text-base font-medium hover:scale-105"
-            >
-              Download CV
-            </a>
+           <a
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  download="Prahlad_Kumar_Resume.pdf"
+  className="px-6 py-3 rounded-full border border-purple-500 hover:bg-purple-600 transition duration-300 text-sm md:text-base font-medium hover:scale-105"
+>
+  Download CV
+</a>
           </div>
         </div>
 
