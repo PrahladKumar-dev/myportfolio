@@ -106,7 +106,7 @@ export default function Hero() {
           {/* SUBTITLE */}
           <h2 className='text-xl md:text-2xl font-bold mb-4 text-white'>
 
-           MERN  Full Stack Developer
+            MERN Full Stack Developer
 
           </h2>
 
@@ -128,8 +128,10 @@ export default function Hero() {
             </a>
 
             <a
-              href='/resume.pdf'
-              download
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              download='Prahlad_Kumar_Resume.pdf'
+              target='_blank'
+              rel='noreferrer'
               className='px-6 py-3 rounded-full border border-purple-500 hover:bg-purple-600 transition duration-300 text-sm md:text-base font-medium hover:scale-105'
             >
               Download CV
